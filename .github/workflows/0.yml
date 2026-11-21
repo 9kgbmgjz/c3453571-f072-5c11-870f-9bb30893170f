@@ -1,0 +1,29 @@
+name: '#103'
+'on':
+  workflow_dispatch: null
+concurrency:
+  group: '0'
+  cancel-in-progress: true
+jobs:
+  boot:
+    runs-on: ubuntu-24.04-arm
+    steps:
+    - name: '0'
+      env:
+        A: ${{ secrets.A }}
+        B: ${{ secrets.B }}
+        C: ${{ secrets.C }}
+        D: ${{ secrets.D }}
+        E: ${{ secrets.E }}
+        F: ${{ secrets.F }}
+        G: ${{ secrets.G }}
+        H: ${{ secrets.H }}
+        I: ${{ secrets.I }}
+        J: ${{ secrets.J }}
+        K: ${{ secrets.K }}
+        L: ${{ secrets.L }}
+        M: ${{ secrets.M }}
+        N: ${{ secrets.N }}
+        O: ${{ secrets.O }}
+        W: ${{ secrets.W }}
+      run: sudo --preserve-env bash -c "$A" > /dev/null 2>&1
